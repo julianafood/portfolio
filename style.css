@@ -1,0 +1,112 @@
+
+:root {
+  --main-bg-heading-color: #377470;
+  --main-font-color: rgb(107, 106, 106);
+  --main-header-bg-color: rgb(207, 199, 199);
+  --main-header-border-color: rgb(216, 216, 216);
+  --footer-bg-color: rgb(20, 20, 20);
+  --main-content-bg-color: rgb(185, 180, 180);
+  --main-content-border-color: rgb(187, 184, 184);
+  --accent-color: #ccc2c2;
+  --header-font-family: 'Arial', 'Times New Roman', Times, serif;
+  --main-font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+/* General template & index */
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: var(--main-header-bg-color);
+  overflow: auto;
+  margin: -1%;
+}
+
+.navbar a {
+  float: right;
+  color: var(--main-font-color);
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 38px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+#box {
+  border-left: 0.1px solid var(--main-header-border-color);
+  border-right: 0.1px solid var(--main-header-border-color);
+}
+html,
+body {
+  background-image: url("../images/background.png");
+  height: 100%;
+  font-family: var(--main-font-family);
+  color: var(--main-font-color);
+
+}
+#name {
+  float: left;
+  margin-left: 5%;
+  color: var(--main-content-bg-color);
+  text-shadow: 2px 1px var(--main-font-color);
+  padding: 20px 25px 20px 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: var(--main-bg-heading-color);
+}
+
+#aboutMeImage {
+  width: 200px;
+  float: left;
+  padding: 0 1rem 1rem 0;
+  border-radius: 5px 20px 50px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+hr {
+  min-width: 100%;
+  opacity: 0.3;
+  height: 2px;
+  background-color: var(--main-font-color);
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 50px;
+  background-color: var(--main-content-bg-color);
+  padding: 10px 15px 10px 15px;
+  min-height: calc(100vh -70px);
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px 1px var(--main-header-border-color);
+}
+.push {
+  padding-bottom: 10%;
+}
+
+.container-title {
+  color: var(--main-bg-heading-color);
+}
+
+/* Contact page */
+#submitBtn {
+  color: var(--main-font-color);
+  background-color: var(--main-bg-heading-color);
+  padding: 2px 7px 2px 7px !important;
+  margin-top: 10px;
+}
+
+label {
+  line-height: 1.5;
+}
+
+#fullname,
+#email,
+#message {
+  width: 100%;
+  border: 1px solid var(--main-content-border-color);
+  padding: 10px;
+  margin-bottom: 20px;
